@@ -18,6 +18,7 @@ $(document).ready(function() {
     let result = user.age;
     let result2 = user.mercuryAge;
     let result3 = user.venusAge;
+    lifecheck();
     let result4 = user.marsAge;
     let result5 = user.jupiterAge;
     $('#result').text("Earth: " + result + " years old, " + " Your Current life expecteny on this planet is: " + (lifeExpectency - result) + " years.");
@@ -25,5 +26,15 @@ $(document).ready(function() {
     $('#result3').text("Venus: " + result3 + " years old, " + " Your Current life expecteny on this planet is: " + (lifeExpectency - result3) + " years.");
     $('#result4').text("Mars: " + result4 + " years old, " + " Your Current life expecteny on this planet is: " + (lifeExpectency - result4) + " years.");
     $('#result5').text("Jupiter: " + result5 + " years old, " + " Your Current life expecteny on this planet is: " + (lifeExpectency - result5) + " years.");
+
+    function lifecheck(){
+      if (lifeExpectency - result < 0) {
+        $('#liferesult').text("hey looks like you've beat the odds, good job. You've lived longer than the average person here by " + (result - lifeExpectency) + " year(s)")
+      } else if (lifeExpectency - result2 < 0){
+        $('#liferesult2').text("hey looks like you've beat the odds, good job. You've lived longer than the average person here by " + (result2 - lifeExpectency) + " year(s)")
+
+      }
+    }
+
   });
 });
