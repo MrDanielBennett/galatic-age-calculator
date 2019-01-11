@@ -1,4 +1,4 @@
-import {Space_age} from ./../src/space-age.js
+// import { getAge } from ./../src/space-age.js
 
 describe ('Space_age', function() {
 
