@@ -1,8 +1,9 @@
-class Space_age {
+export class Space_age {
   constructor(birthday){
     this.birthday = new Date(birthday);
     this.today = new Date();
     this.age = this.age;
+    this.mercuryAge = this.mercuryAge;
   }
   getAge(){
     this.age = this.today.getFullYear() - this.birthday.getFullYear();
@@ -12,13 +13,7 @@ class Space_age {
     }
     return this.age;
   }
-
-}
-
-
-
-  function getMercuryAge(age) {
-    let earthAge = getAge()
-    let mercuryAge = earthAge/.24
-
+  getMercuryAge() {
+    this.mercuryAge = this.age/.24;
   }
+}
