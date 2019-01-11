@@ -2,3 +2,20 @@ body {
   background-color: tan !important;
   color: white !important;
 }
+h1{
+  text-shadow: 2px 2px darkgrey;
+}
+label{
+  text-shadow: 2px 2px darkgrey;
+}
+#button{
+  margin-top: 5px;
+}
+.results {
+  text-shadow: 1px 1px black;
+}
+.special-results{
+  text-shadow: 1px 1px darkgrey;
+  font-size: 12px;
+  margin: 5px;
+}

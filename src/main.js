@@ -32,11 +32,12 @@ $(document).ready(function() {
         $('#liferesult').text("hey looks like you've beat the odds, good job. You've lived longer than the average person here by " + (result - lifeExpectency) + " year(s)");
       }
       if (lifeExpectency - result2 < 0){
-        $('#liferesult2').text("hey looks like you've beat the odds, good job. You've lived longer than the average person here by " + (result2 - lifeExpectency) + " year(s)");}
+        $('#liferesult2').text("hey looks like you've beat the odds, good job. You've lived longer than the average person here by " + (result2 - lifeExpectency) + " year(s)");
+      }
       if (lifeExpectency - result3 < 0){
         $('#liferesult3').text("hey looks like you've beat the odds, good job. You've lived longer than the average person here by " + (result3 - lifeExpectency) + " year(s)");
       }
-        if (lifeExpectency - result4 < 0){
+      if (lifeExpectency - result4 < 0){
         $('#liferesult4').text("hey looks like you've beat the odds, good job. You've lived longer than the average person here by " + (result4 - lifeExpectency) + " year(s)");
       }
       if (lifeExpectency - result5 < 0){
