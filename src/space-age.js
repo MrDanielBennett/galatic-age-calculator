@@ -4,6 +4,7 @@ export class Space_age {
     this.today = new Date();
     this.age = this.age;
     this.mercuryAge = this.mercuryAge;
+    this.venusAge = this.venusAge;
   }
   getAge(){
     this.age = this.today.getFullYear() - this.birthday.getFullYear();
@@ -14,8 +15,18 @@ export class Space_age {
     return this.age;
   }
   getMercuryAge() {
-    debugger
     let realMercuryAge = parseInt(this.age)/.24;
     this.mercuryAge = Math.floor(realMercuryAge)
   }
+  getVenusAge() {
+    let realVenusAge = parseInt(this.age)/.62;
+    this.venusAge = Math.floor(realVenusAge)
+  }
+  // getMarsAge() {
+  //   let realMercuryAge = parseInt(this.age)/.24;
+  //   this.mercuryAge = Math.floor(realMercuryAge)
+  // }
+  // getJupiterAge() {
+  //   let realMercuryAge = parseInt(this.age)/.24;
+  //   this.mercuryAge = Math.floor(realMercuryAge)
 }

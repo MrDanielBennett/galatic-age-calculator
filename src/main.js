@@ -10,11 +10,13 @@ $(document).ready(function() {
     let birthday = $('#birthday-input').val();
     let user = new Space_age(birthday);
     user.getAge();
-    debugger;
     user.getMercuryAge();
+    user.getVenusAge();
     let result = user.age;
     let result2 = user.mercuryAge;
+    let result3 = user.venusAge
     $('#result').text("Earth: " + result);
     $('#result2').text("Mercury: " + result2);
+    $('#result3').text("Venus: " + result3);
   });
 });
