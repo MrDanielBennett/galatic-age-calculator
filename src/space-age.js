@@ -14,6 +14,8 @@ export class Space_age {
     return this.age;
   }
   getMercuryAge() {
-    this.mercuryAge = this.age/.24;
+    debugger
+    let realMercuryAge = parseInt(this.age)/.24;
+    this.mercuryAge = Math.floor(realMercuryAge)
   }
 }
